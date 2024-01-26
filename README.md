@@ -4,27 +4,16 @@ This project implements a simple HTTP server using Node.js (Express) and Dockeri
 
 ## Project Structure
 
-
-Certainly! Below is a simple README.md file to document your HTTP server implemented with Node.js (Express) and Dockerized for both ARM and x86 architectures.
-
-markdown
-Copy code
-# Optimize HTTP Server
-
-This project implements a simple HTTP server using Node.js (Express) and Dockerized for both ARM and x86 architectures.
-
-## Project Structure
-
-+/tmp
-    +/data
-        +1.txt
-        +2.txt
-        +...
-        +n.txt
-+/src
-    +server.js
-+Dockerfile
-+package.json
++ /tmp
+    + /data
+        + 1.txt
+        + 2.txt
+        + ...
+        + n.txt
++ /src
+    + server.js
++ Dockerfile
++ package.json
 
 
 ## Requirements
@@ -41,10 +30,9 @@ This project implements a simple HTTP server using Node.js (Express) and Dockeri
    cd optimize-http-server
 
 2. Generate random text files for development purposes:
-
-    dd if=/dev/urandom of=tmp/data/1.txt bs=1M count=100
-    dd if=/dev/urandom of=tmp/data/2.txt bs=1M count=100
-    # Repeat for other files
+    fsutil file createnew tmp\data\1.txt 104857600
+    fsutil file createnew tmp\data\2.txt 104857600
+    Repeat for other files
 
 3. Build the Docker image:
 
