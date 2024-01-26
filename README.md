@@ -30,10 +30,14 @@ This project implements a simple HTTP server using Node.js (Express) and Dockeri
    cd optimize-http-server
 
 2. Generate random text files for development purposes:
+
+    ```bash
     fsutil file createnew tmp\data\1.txt 104857600
     fsutil file createnew tmp\data\2.txt 104857600
-    Repeat for other files
-
+    .
+    .
+    fsutil file createnew tmp\data\n.txt 104857600
+    
 3. Build the Docker image:
 
     docker build -t optimize-http-server .
