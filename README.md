@@ -26,7 +26,7 @@ This project implements a simple HTTP server using Node.js (Express) and Dockeri
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/optimize-http-server.git
+   https://github.com/saurabh78crypto/optimize-http-server.git
    cd optimize-http-server
 
 2. Generate random text files for development purposes:
